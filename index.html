@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Blog details</title>
+  </head>
+  <body>
+    <div id="app">
+      <heading></heading>
+      <div class="headband"></div>
+      <content></content>
+      <foote></foote>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="heading.js"></script>
+    <script src="content.js"></script>
+    <script src="foot.js"></script>
+    <script>
+      Vue.createApp({
+        components: {
+          foote,
+          heading,
+          content
+        }
+      }).mount('#app')
+    </script>
+  </body>
+</html>
